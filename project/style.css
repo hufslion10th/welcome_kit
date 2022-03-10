@@ -28,7 +28,8 @@ body {
   }
 }
 .container {
-  width: 105rem;
+  box-sizing: border-box;
+  width: 100%;
   height: 52rem;
   background: #000000;
   display: fixed;
