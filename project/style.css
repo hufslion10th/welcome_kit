@@ -1,77 +1,80 @@
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes confetti-slow {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
-  }
-  100% {
-    transform: translate3d(1.5625rem, 105vh, 0) rotateX(360deg) rotateY(180deg);
-  }
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(1.5625rem, 105vh, 0) rotateX(360deg)
+            rotateY(180deg);
+    }
 }
 @keyframes confetti-medium {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
-  }
-  100% {
-    transform: translate3d(6.25rem, 105vh, 0) rotateX(100deg) rotateY(360deg);
-  }
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(6.25rem, 105vh, 0) rotateX(100deg)
+            rotateY(360deg);
+    }
 }
 @keyframes confetti-fast {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
-  }
-  100% {
-    transform: translate3d(-3.125rem, 105vh, 0) rotateX(10deg) rotateY(250deg);
-  }
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(-3.125rem, 105vh, 0) rotateX(10deg)
+            rotateY(250deg);
+    }
 }
 .container {
-  box-sizing: border-box;
-  width: 100%;
-  height: 52rem;
-  background: #000000;
-  display: fixed;
-  top: 0%;
-  left: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: fixed;
+    top: 0%;
+    left: 0%;
 }
 
 .confetti-container {
-  perspective: 43.75rem;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    perspective: 43.75rem;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .confetti {
-  position: absolute;
-  z-index: 1;
-  top: -0.625rem;
-  border-radius: 0%;
+    position: absolute;
+    z-index: 1;
+    top: -0.625rem;
+    border-radius: 0%;
 }
 .confetti--animation-slow {
-  animation: confetti-slow 2.25s linear 1 forwards;
+    animation: confetti-slow 2.25s linear 1 forwards;
 }
 .confetti--animation-medium {
-  animation: confetti-medium 1.75s linear 1 forwards;
+    animation: confetti-medium 1.75s linear 1 forwards;
 }
 .confetti--animation-fast {
-  animation: confetti-fast 1.25s linear 1 forwards;
+    animation: confetti-fast 1.25s linear 1 forwards;
 }
 
 /* fade in */
 .fade-in-box {
-  display: inline-block;
-  background: rgb(0, 0, 0);
-  padding: 0 rem;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    padding: 0 rem;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
 }
 
 @keyframes fadein {
@@ -82,7 +85,8 @@ body {
         opacity: 1;
     }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+    /* Firefox */
     from {
         opacity: 0;
     }
@@ -90,7 +94,8 @@ body {
         opacity: 1;
     }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
     from {
         opacity: 0;
     }
@@ -98,7 +103,8 @@ body {
         opacity: 1;
     }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+    /* Opera */
     from {
         opacity: 0;
     }
@@ -108,36 +114,49 @@ body {
 }
 
 /* text animation */
-.text {
-  font-size: 3rem;
-  line-height: 4rem;
-  position: absolute;
+@media (min-width: 1800px) {
+    .text {
+        font-size: 3rem;
+        line-height: 4rem;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        margin-top: 5rem;
+        margin-left: 50rem;
+        width: 35rem;
+        height: 20rem;
+        padding-top: 8rem;
+        color: white;
+        text-align: center;
+        right: 20vh;
+        top: 5vh;
+    }
 }
+
 .fadingEffect {
-  height: 4rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0) 5%);
-  -webkit-animation: showHide 1s ease-in forwards;
-  animation: showHide 1s ease-in forwards;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0) 5%);
+    -webkit-animation: showHide 1s ease-in forwards;
+    animation: showHide 1s ease-in forwards;
 }
 
 @-webkit-keyframes showHide {
-  0% {
-    -webkit-width: 100%;
-  }
-  100% {
-    -webkit-width: 0%;
-  }
+    0% {
+        -webkit-width: 100%;
+    }
+    100% {
+        -webkit-width: 0%;
+    }
 }
 @keyframes showHide {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
 }
