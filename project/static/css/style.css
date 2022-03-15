@@ -128,6 +128,19 @@ body {
 
 .visible {
     display: inline;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    color: #cccccc;
+    font-size: 2rem;
+    width: 2rem;
+    transition: 0.1s linear;
+}
+
+.visible:focus,
+.visible:valid {
+    width: 5.5rem;
 }
 
 /* animation */
