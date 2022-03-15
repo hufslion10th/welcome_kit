@@ -121,6 +121,15 @@ body {
     left: 0;
 }
 
+/* 로그인 버튼 슬라이드 애니메이션 */
+.hide {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
 /* animation */
 .confetti {
     position: absolute;
