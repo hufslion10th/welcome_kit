@@ -74,8 +74,8 @@ body {
     width: 30vw;
 }
 .welcome-block__greet-text:first-child {
-    font-size: 7rem;
-    line-height: 8rem;
+    font-size: 6rem;
+    line-height: 7rem;
     text-align: end;
     padding-right: 3rem;
     font-weight: 500;
@@ -84,8 +84,8 @@ body {
 .welcome-block__greet-text:last-child {
     text-align: start;
     font-weight: 500;
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 
 /* 입장 버튼 */
@@ -135,4 +135,24 @@ body {
 }
 .confetti--animation-fast {
     animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+#no-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    #no-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        color: #cccccc;
+        font-size: 2rem;
+        background-color: black;
+    }
 }
