@@ -1,7 +1,8 @@
 @import '../css/reset.css';
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
 body {
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-family: 'Apple SD Gothic Neo';
 }
 
 @keyframes confetti-slow {
