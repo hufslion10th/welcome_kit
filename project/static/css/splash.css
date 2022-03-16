@@ -1,0 +1,125 @@
+#opacity-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ui-header {
+    position: absolute;
+    top: 0;
+    height: 1.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-header__util-left {
+    width: 35rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.fa-apple {
+    color: white;
+    font-size: 1.25rem;
+}
+.ui-header__util-left > span {
+    color: white;
+}
+
+/* 우측상단 유틸 버튼 */
+
+.ui-header__util-right {
+    width: 18rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+}
+.ui-header__icons {
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ui-header__icons > i {
+    color: white;
+}
+
+.date {
+    color: white;
+}
+
+.dayNumber {
+    padding-right: 1rem;
+}
+
+/* window ui 레이아웃 */
+#main {
+    position: absolute;
+    top: 20vh;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#main-window {
+    height: 60vh;
+    width: 70rem;
+    background-color: rgba(44, 44, 44, 0.7);
+}
+
+#window-header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgba(25, 25, 25, 1);
+    text-align: center;
+}
+
+#window-header > p {
+    color: rgba(150, 150, 150, 1);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: center;
+}
+
+#traffic-light {
+    height: 1.5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.circle {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.circle:first-child {
+    background-color: #ed6a5f;
+}
+
+.circle:nth-child(2) {
+    background-color: #f5bf4f;
+}
+
+.circle:nth-child(3) {
+    background-color: #61c554;
+}

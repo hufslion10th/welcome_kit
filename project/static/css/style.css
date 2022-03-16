@@ -1,8 +1,9 @@
 @import '../css/reset.css';
+@import '../css/splash.css';
 @import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
 
 body {
-    font-family: 'Apple SD Gothic Neo';
+    font-family: 'Apple SD Gothic Neo', 'Josefin Sans', sans-serif;
 }
 
 @keyframes confetti-slow {
@@ -164,7 +165,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     #no-mobile {
         display: flex;
         align-items: center;
