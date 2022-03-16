@@ -17,7 +17,7 @@ function timer() {
     const AM = checkAm(date.getHours());
     const newHours =
         date.getHours() % 12 >= 10
-            ? `${date.getHours() % 12}`
+            ? `${date.getHours()} % 12)`
             : `0${date.getHours() % 12}`;
     const newMinutes =
         date.getMinutes() >= 10
