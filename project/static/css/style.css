@@ -180,3 +180,19 @@ body {
         background-color: black;
     }
 }
+
+@media screen and (max-height: 940px) {
+    #no-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        color: #cccccc;
+        font-size: 2rem;
+        background-color: black;
+    }
+}
