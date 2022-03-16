@@ -62,3 +62,64 @@
 .dayNumber {
     padding-right: 1rem;
 }
+
+/* window ui 레이아웃 */
+#main {
+    position: absolute;
+    top: 20vh;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#main-window {
+    height: 60vh;
+    width: 70rem;
+    background-color: rgba(44, 44, 44, 0.7);
+}
+
+#window-header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgba(25, 25, 25, 1);
+    text-align: center;
+}
+
+#window-header > p {
+    color: rgba(150, 150, 150, 1);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: center;
+}
+
+#traffic-light {
+    height: 1.5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.circle {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.circle:first-child {
+    background-color: #ed6a5f;
+}
+
+.circle:nth-child(2) {
+    background-color: #f5bf4f;
+}
+
+.circle:nth-child(3) {
+    background-color: #61c554;
+}
