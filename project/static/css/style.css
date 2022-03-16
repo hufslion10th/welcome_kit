@@ -1,7 +1,8 @@
 @import '../css/reset.css';
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
 body {
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-family: 'Apple SD Gothic Neo';
 }
 
 @keyframes confetti-slow {
@@ -118,6 +119,28 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+/* 로그인 버튼 슬라이드 애니메이션 */
+.hide {
+    display: none;
+}
+
+.visible {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    color: #cccccc;
+    font-size: 2rem;
+    width: 2rem;
+    transition: 0.1s linear;
+}
+
+.visible:focus,
+.visible:valid {
+    width: 5.5rem;
 }
 
 /* animation */
