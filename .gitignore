@@ -2,6 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,react,visualstudiocode,pycharm,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,react,visualstudiocode,pycharm,macos,windows
 
+secrets.json
+
 ### macOS ###
 # General
 .DS_Store
