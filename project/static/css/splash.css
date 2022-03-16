@@ -1,0 +1,64 @@
+#opacity-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ui-header {
+    position: absolute;
+    top: 0;
+    height: 1.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-header__util-left {
+    width: 35rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.fa-apple {
+    color: white;
+    font-size: 1.25rem;
+}
+.ui-header__util-left > span {
+    color: white;
+}
+
+/* 우측상단 유틸 버튼 */
+
+.ui-header__util-right {
+    width: 18rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+}
+.ui-header__icons {
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ui-header__icons > i {
+    color: white;
+}
+
+.date {
+    color: white;
+}
+
+.dayNumber {
+    padding-right: 1rem;
+}
