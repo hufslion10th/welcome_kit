@@ -181,7 +181,7 @@ body {
     }
 }
 
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 820px) {
     #no-mobile {
         display: flex;
         align-items: center;
