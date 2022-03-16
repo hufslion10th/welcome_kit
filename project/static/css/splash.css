@@ -123,3 +123,35 @@
 .circle:nth-child(3) {
     background-color: #61c554;
 }
+
+/* footer */
+#footer {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+#dock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    height: 5rem;
+}
+#dock > img {
+    height: 5rem;
+    width: 5rem;
+}
+#dock > a > img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.vertical-divider {
+    width: 4px;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
