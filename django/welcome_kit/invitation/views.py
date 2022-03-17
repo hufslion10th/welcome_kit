@@ -12,7 +12,7 @@ from users.models import User
 
 def login(request):
     if request.method == "POST":
-        user_id = request.POST['username']
+        user_id = request.POST['user_id']
         password = '1234'
 
         user = auth.authenticate(
@@ -30,4 +30,4 @@ def login(request):
         return render(request, "invitation/index.html")
 
 def home(request):
-    return render(request, 'invitation/splash.html')
+    return render(request, 'invitation/base.html')
