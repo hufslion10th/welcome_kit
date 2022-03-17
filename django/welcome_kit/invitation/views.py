@@ -34,3 +34,15 @@ def home(request):
 
 def main(request):
     return render(request, 'invitation/main.html')
+
+def roadmap_FE(request):
+    return render(request, 'invitation/roadmap_FE.html')
+
+def roadmap_BE(request):
+    return render(request, 'invitation/roadmap_BE.html')
+
+def roadmap_PMD(request):
+    return render(request, 'invitation/roadmap_PMD.html')
+
+def roadmap_today(request):
+    return render(request, 'invitation/roadmap_today.html')
