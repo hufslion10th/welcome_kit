@@ -12,7 +12,7 @@ from users.models import User
 
 def login(request):
     if request.method == "POST":
-        user_id = request.POST['user_id']
+        user_id = request.POST['username']
         password = '1234'
 
         user = auth.authenticate(
@@ -30,4 +30,19 @@ def login(request):
         return render(request, "invitation/index.html")
 
 def home(request):
-    return render(request, 'invitation/base.html')
+    return render(request, 'invitation/index.html')
+
+def main(request):
+    return render(request, 'invitation/main.html')
+
+def roadmap_FE(request):
+    return render(request, 'invitation/roadmap_FE.html')
+
+def roadmap_BE(request):
+    return render(request, 'invitation/roadmap_BE.html')
+
+def roadmap_PMD(request):
+    return render(request, 'invitation/roadmap_PMD.html')
+
+def roadmap_today(request):
+    return render(request, 'invitation/roadmap_today.html')

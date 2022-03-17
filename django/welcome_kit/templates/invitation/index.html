@@ -29,43 +29,31 @@
                         환영합니다.
                     </p>
                 </div>
+                {% if user.is_authenticated %}
+                <button id="start-btn" onclick = "location.href= 'main' ">
+                    버튼을 눌러 이동해주세요!
+                </button>
+
+                {% else %}
                 <button id="start-btn">
                     Let's on-board
                     <form
                         action="{% url 'invitation:login' %}"
                         method="POST"
                         name="login"
-                    >
-                        {% csrf_token %} {% if user.is_authenticated %}
-                        <script>
-                            const textnode =
-                                document.querySelector('#start-btn');
-                            textnode.removeChild(textnode.firstChild);
-
-                            const welcomeText =
-                                document.createTextNode(
-                                    '버튼을 눌러 이동해주세요!'
-                                );
-                            textnode.appendChild(welcomeText);
-
-                            const button = document.querySelector('#start-btn');
-                            button.addEventListener('click', () => {
-                                login.submit();
-                            });
-                        </script>
-
-                        {% else %}
-
-                        <input
+                    >{% csrf_token %} 
+                    <input
                             type="text"
                             name="username"
                             class="hide"
                             required
                             autocomplete="off"
                         />
-                        {% endif %}
                     </form>
                 </button>
+                {% endif %}
+
+
             </div>
         </div>
 
@@ -80,3 +68,4 @@
         ></script>
     </body>
 </html>
+
