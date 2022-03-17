@@ -3,7 +3,8 @@ const input = document.querySelector('.hide');
 
 function slideInput() {
     if (this.firstChild.nodeType == 3) {
-        this.firstElementChild.firstElementChild.className = 'visible';
+        this.firstElementChild.firstElementChild.nextElementSibling.className =
+            'visible';
         this.removeChild(this.firstChild);
     }
 }

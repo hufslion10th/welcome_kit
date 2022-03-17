@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -103,13 +104,22 @@
             <div id="main-window">
                 <div id="window-header">
                     <div id="traffic-light">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                        <div class="circle">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <div class="circle">
+                            <i
+                                class="fa-solid fa-up-right-and-down-left-from-center"
+                            ></i>
+                        </div>
                     </div>
                     <p>Welcome to LIKELION</p>
                 </div>
             </div>
+            {% block content %} {% endblock %}
         </div>
 
         <div id="footer">
