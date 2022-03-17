@@ -12,7 +12,7 @@ from users.models import User
 
 def login(request):
     if request.method == "POST":
-        user_id = request.POST['user_id']
+        user_id = request.POST['username']
         password = '1234'
 
         user = auth.authenticate(
