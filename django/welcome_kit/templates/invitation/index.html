@@ -33,7 +33,8 @@
                     Let's on-board
                     <form action="{% url 'invitation:login' %}" method="POST" name="login">
                         {% csrf_token %}
-                        <input type="text" name="username" >
+                        <!--hide-->
+                        <input type="text" name="username" />
                     </form>
                 </button>
             </div>
