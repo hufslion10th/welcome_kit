@@ -1,22 +1,23 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>10기 아기사자들을 환영합니다!</title>
-        <link rel="stylesheet" href="{% static './css/style.css' %}" />
+        <link rel="stylesheet" href="./static/css/style.css" />
         <script
             src="https://kit.fontawesome.com/e72f57b438.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            href="//db.onlinewebfonts.com/c/5a9f693a1affe1c64c2cf97a146a7986?family=APPLE"
+            rel="stylesheet"
+            type="text/css"
+        />
     </head>
 
     <body>
-        <img
-            src="{% static './img/lion_background.jpg' %}"
-            id="background-img"
-        />
+        <img src="./static/img/lion_background.jpg" id="background-img" />
         <div id="opacity-block"></div>
         <!-- congrats effect -->
 
@@ -118,23 +119,69 @@
                     </div>
                     <p>Welcome to LIKELION</p>
                 </div>
-                {% block content %} {% endblock %}
+
+                <div id="window-profile">
+                    <div id="profile">
+                        <img src="./static/img/profile.png" alt="" />
+                        <div id="profile-status">
+                            <div id="name">
+                                <p>'{{ user.modifier }}' 개발자</p>
+                                <p>{{ user.name }}</p>
+                            </div>
+                            <div id="class">
+                                <div class="keyword">{{ user.department }}</div>
+                                <div class="keyword">{{ user.grade }}</div>
+                                <div class="keyword">{{ user.track }}</div>
+                                <div class="keyword">{{ user.leader }}</div>
+                                <div class="keyword">{{ user.value }}</div>
+                                <div class="keyword">{{ user.interest }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="window-content">
+                    <div id="recommend-block">
+                        <div class="recommend">
+                            <p class="recommend-name">{{ user.student1 }}</p>
+                            <p class="recommend-keyword">
+                                <span> 리더 </span>
+                                <span> 가치 </span>
+                                <span> 관심사 </span>
+                            </p>
+                            <p class="recommend-introduce">
+                                {{ user.student1_intro }}
+                            </p>
+                        </div>
+                        <div class="recommend">
+                            <p class="recommend-name">{{ user.student2 }}</p>
+                            <p class="recommend-keyword">
+                                <span> 리더 </span>
+                                <span> 가치 </span>
+                                <span> 관심사 </span>
+                            </p>
+                            <p class="recommend-introduce">
+                                {{ user.student2_intro }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="footer">
             <div id="dock">
                 <a href="{% url 'invitation:main' %}">
-                    <img src="{% static './img/logo.png' %}" />
+                    <img src="./static/img/logo.png" />
                 </a>
-                <img src="{% static './img/calendar.png' %}" />
+                <img src="./static/img/calendar.png" />
                 <div class="vertical-divider"></div>
-                <img src="{% static './img/Trash.png' %}" />
+                <img src="./static/img/Trash.png" />
             </div>
         </div>
 
-        <div id="no-mobile">PC환경에서 실행해주세요 :)</div>
+        <div id="no-mobile">1440 X 940 이상의 환경에서 실행해주세요 :)</div>
 
-        <script src="{% static './js/timer.js' %}"></script>
+        <script src="./static/js/timer.js"></script>
     </body>
 </html>

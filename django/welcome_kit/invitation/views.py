@@ -46,3 +46,6 @@ def roadmap_PMD(request):
 
 def roadmap_today(request):
     return render(request, 'invitation/roadmap_today.html')
+
+def doctor(request):
+    return render(request, 'invitation/doctor.html')
