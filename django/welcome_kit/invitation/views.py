@@ -30,4 +30,7 @@ def login(request):
         return render(request, "invitation/index.html")
 
 def home(request):
-    return render(request, 'invitation/base.html')
+    return render(request, 'invitation/index.html')
+
+def main(request):
+    return render(request, 'invitation/main.html')
