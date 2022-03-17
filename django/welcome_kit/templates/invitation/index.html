@@ -17,7 +17,7 @@
             <div id="welcome-block">
                 <div id="welcome-block__greet">
                     <p class="welcome-block__greet-text">
-                        아기사자 <br /><span>OOO님</span>
+                        아기사자 <br /><span>{{ user.name }} 님</span>
                     </p>
                     <p class="welcome-block__greet-text">
                         멋쟁이사자처럼에<br />
@@ -27,8 +27,9 @@
                 </div>
                 <button id="start-btn">
                     Let's on-board
-                    <form action="get" name="login">
-                        <input type="text" class="hide" required />
+                    <form action="{% url 'invitation:login' %}" method="POST" name="login">
+                        {% csrf_token %}
+                        <input type="text" name="username">
                     </form>
                 </button>
             </div>
