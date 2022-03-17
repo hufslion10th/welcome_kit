@@ -1,0 +1,119 @@
+#window-profile {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#profile {
+    box-sizing: border-box;
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+#profile-status {
+    background-color: #000000;
+    box-sizing: border-box;
+    height: 100%;
+    width: 40rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+
+#profile > img {
+    width: 12rem;
+    height: 12rem;
+}
+#name {
+    box-sizing: border-box;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#name > p:first-child {
+    color: white;
+    font-size: 2rem;
+}
+#name > p:last-child {
+    color: #ff9e1b;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding-left: 1rem;
+}
+.keyword {
+    margin-bottom: 0.5rem;
+    background-color: white;
+    color: #ff9e1b;
+    font-size: 1.3rem;
+    font-weight: 400;
+    height: 2.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+#window-content {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    height: 20rem;
+    padding: 0;
+    justify-content: center;
+}
+
+#recommend-block {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommend {
+    box-sizing: border-box;
+    height: 80%;
+    width: 45%;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.recommend > p:first-child {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recommend > p:nth-child(2) {
+    font-size: 1.2rem;
+    color: #ff9e1b;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.recommend > p:last-child {
+    font-size: 1rem;
+    text-align: justify;
+}

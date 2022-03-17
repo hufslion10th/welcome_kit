@@ -1,7 +1,22 @@
 @import '../css/reset.css';
 @import '../css/splash.css';
-@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
-
+@import '../css/profile.css';
+@import '../css/bookmark.css';
+@import url(//db.onlinewebfonts.com/c/5a9f693a1affe1c64c2cf97a146a7986?family=APPLE);
+@font-face {
+    font-family: 'APPLE';
+    src: url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.eot');
+    src: url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.eot?#iefix')
+            format('embedded-opentype'),
+        url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.woff2')
+            format('woff2'),
+        url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.woff')
+            format('woff'),
+        url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.ttf')
+            format('truetype'),
+        url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.svg#APPLE')
+            format('svg');
+}
 body {
     font-family: 'Apple SD Gothic Neo', 'Josefin Sans', sans-serif;
 }

@@ -4,20 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>10기 아기사자들을 환영합니다!</title>
-        <link rel="stylesheet" href="./static/css/style.css" />
+        <link rel="stylesheet" href="{% static './css/style.css' %}" />
         <script
             src="https://kit.fontawesome.com/e72f57b438.js"
             crossorigin="anonymous"
         ></script>
-        <link
-            href="//db.onlinewebfonts.com/c/5a9f693a1affe1c64c2cf97a146a7986?family=APPLE"
-            rel="stylesheet"
-            type="text/css"
-        />
     </head>
 
     <body>
-        <img src="./static/img/lion_background.jpg" id="background-img" />
+        <img
+            src="{% static './img/lion_background.jpg' %}"
+            id="background-img"
+        />
         <div id="opacity-block"></div>
         <!-- congrats effect -->
 
@@ -105,76 +103,11 @@
             <div id="main-window">
                 <div id="window-header">
                     <div id="traffic-light">
-                        <div class="circle">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="circle">
-                            <i class="fa-solid fa-minus"></i>
-                        </div>
-                        <div class="circle">
-                            <i
-                                class="fa-solid fa-up-right-and-down-left-from-center"
-                            ></i>
-                        </div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
                     </div>
                     <p>Welcome to LIKELION</p>
-                </div>
-
-                <div id="main-content">
-                    <div id="bookmark">
-                        <p>즐겨찾기</p>
-                        <div id="bookmark-img">
-                            <a href="https://github.com/" target="_blank">
-                                <img src="./static/img/github.png" alt="" />
-                            </a>
-                            <a href="https://www.codelion.net/" target="_blank">
-                                <img src="./static/img/codelion.png" alt="" />
-                            </a>
-
-                            <a
-                                href="https://www.notion.so/ko-kr/product"
-                                target="_blank"
-                            >
-                                <img src="./static/img/notion.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="visit">
-                        <p>자주 방문할 웹 사이트</p>
-                        <div id="visit-img">
-                            <figure>
-                                <img src="./static/img/roadmap.png" alt="" />
-                                <figcaption>likelion-10th.plan</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="./static/img/gather.png" alt="" />
-                                <figcaption>
-                                    아지트를 소개합니다.hideout
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <img src="./static/img/together.png" alt="" />
-                                <figcaption>
-                                    개발은 혼자하기 위험하단다!
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <img src="./static/img/bingo.png" alt="" />
-                                <figcaption>아기사자를위한.quest</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="./static/img/together.png" alt="" />
-                                <figcaption>
-                                    아기사자로살아남기.guide
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <img src="./static/img/introduce.png" alt="" />
-                                <figcaption>rolling-paper.forU</figcaption>
-                            </figure>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -182,16 +115,16 @@
         <div id="footer">
             <div id="dock">
                 <a href="./index.html">
-                    <img src="./static/img/logo.png" />
+                    <img src="{% static './img/logo.png' %}" />
                 </a>
-                <img src="./static/img/calendar.png" />
+                <img src="{% static './img/calendar.png' %}" />
                 <div class="vertical-divider"></div>
-                <img src="./static/img/Trash.png" />
+                <img src="{% static './img/Trash.png' %}" />
             </div>
         </div>
 
-        <div id="no-mobile">1440 X 820 이상의 환경에서 실행해주세요 :)</div>
+        <div id="no-mobile">PC환경에서 실행해주세요 :)</div>
 
-        <script src="./static/js/timer.js"></script>
+        <script src="{% static './js/timer.js' %}"></script>
     </body>
 </html>

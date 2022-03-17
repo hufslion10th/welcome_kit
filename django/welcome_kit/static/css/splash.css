@@ -66,7 +66,7 @@
 /* window ui 레이아웃 */
 #main {
     position: absolute;
-    top: 20vh;
+    top: 12vh;
     height: 60vh;
     width: 100vw;
     display: flex;
@@ -74,7 +74,7 @@
 }
 
 #main-window {
-    height: 60vh;
+    height: 42rem;
     width: 70rem;
     background-color: rgba(44, 44, 44, 0.7);
 }
@@ -84,7 +84,7 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    height: 1.5rem;
+    height: 2rem;
     background-color: rgba(25, 25, 25, 1);
     text-align: center;
 }
@@ -107,9 +107,25 @@
 }
 
 .circle {
-    height: 0.8rem;
-    width: 0.8rem;
-    border-radius: 0.8rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+}
+.circle > i {
+    visibility: hidden;
+}
+#traffic-light:hover .circle > i {
+    visibility: visible;
+}
+.circle:hover {
+    cursor: default;
+}
+.circle:active {
+    opacity: 0.8;
 }
 
 .circle:first-child {
@@ -124,6 +140,13 @@
     background-color: #61c554;
 }
 
+/* window-content */
+#main-content {
+    height: 26rem;
+    width: 58rem;
+    padding: 6rem;
+    padding-top: 3rem;
+}
 /* footer */
 #footer {
     width: 100vw;
