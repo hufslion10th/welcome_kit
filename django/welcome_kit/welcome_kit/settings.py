@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'invitation.apps.InvitationConfig',
+    'greet.apps.GreetConfig',
 ]
 
 MIDDLEWARE = [
