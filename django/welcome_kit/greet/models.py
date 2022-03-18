@@ -13,7 +13,7 @@ class Greet(models.Model):
     content_c = models.TextField(verbose_name='정우진')
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
     class Meta:
         db_table = '롤링페이퍼'

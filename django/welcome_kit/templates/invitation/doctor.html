@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>10기 아기사자들을 환영합니다!</title>
-        <link rel="stylesheet" href="./static/css/style.css" />
+        <link rel="stylesheet" href="{% static './css/style.css' %}" />
         <script
             src="https://kit.fontawesome.com/e72f57b438.js"
             crossorigin="anonymous"
@@ -145,9 +146,9 @@
                         <div class="recommend">
                             <p class="recommend-name">{{ user.student1 }}</p>
                             <p class="recommend-keyword">
-                                <span> 리더 </span>
-                                <span> 가치 </span>
-                                <span> 관심사 </span>
+                                <span>{{ user.student1_value1 }}</span>
+                                <span>{{ user.student1_value2 }}</span>
+                                <span>{{ user.student1_value3 }} </span>
                             </p>
                             <p class="recommend-introduce">
                                 {{ user.student1_intro }}
@@ -156,9 +157,9 @@
                         <div class="recommend">
                             <p class="recommend-name">{{ user.student2 }}</p>
                             <p class="recommend-keyword">
-                                <span> 리더 </span>
-                                <span> 가치 </span>
-                                <span> 관심사 </span>
+                                <span>{{ user.student2_value1 }}</span>
+                                <span>{{ user.student2_value2 }}</span>
+                                <span>{{ user.student2_value3 }}</span>
                             </p>
                             <p class="recommend-introduce">
                                 {{ user.student2_intro }}

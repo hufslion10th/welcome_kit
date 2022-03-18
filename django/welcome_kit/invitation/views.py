@@ -73,3 +73,6 @@ def bingo5(request):
 
 def agit(request):
     return render(request, 'invitation/agit.html')
+
+def rollingpaper(request):
+    return render(request, 'invitation/rollingpaper.html')
