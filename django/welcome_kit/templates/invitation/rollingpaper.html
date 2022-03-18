@@ -2,8 +2,8 @@
 
 <div>
     <div style="text-align: center;margin-top: 7rem;">
-
-        <span style="color: #FFFFFF; font-size: 3rem;">{{rollingpaper_list[0]]}}</span>
+        {% for rollingpaper in rollingpaper_list %}
+        <span id="contentName" style="color: #FFFFFF; font-size: 3rem;">안녕하세요!</span>
 
         
 
@@ -15,7 +15,7 @@
             </div>
     
             <div class="jb-text">
-                <p style="color: #FFFFFF; text-align: center;">
+                <p id="content" style="color: #FFFFFF; text-align: center;">
                         운영진이 여러분을 위해 롤링페이퍼를 작성했어요.
                         <br>
                         운영진 Gather Town 캐릭터에 마우스를 올려보세요!
@@ -40,22 +40,83 @@
     </table>
 </div>
 <script>
+    const content = document.querySelector('#content');
     const contentName = document.querySelector('#contentName');
     const img1 = document.querySelector('#img1');
     const img2 = document.querySelector('#img2');
+    const img3 = document.querySelector('#img3');
+    const img4 = document.querySelector('#img4');
+    const img5 = document.querySelector('#img5');
+    const img6 = document.querySelector('#img6');
+    const img7 = document.querySelector('#img7');
 
     function img1_f(){
-        console.log(event.target);  
-        //contentName.textContent = {{ rollingpaper_list.content_k }};
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_k }}";
+        contentName.textContent = "고도희";
     }
 
     function img2_f(){
-        console.log(event.target);  
-        //contentName.textContent = {{ rollingpaper_list.content_s }};
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_m }}";
+        contentName.textContent = "민선아";
+    }
+
+    function img3_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_p }}";
+        contentName.textContent = "박경준";
+    }
+
+    function img4_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_s }}";
+        contentName.textContent = "설희관";
+    }
+
+    function img5_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_c }}";
+        contentName.textContent = "정우진";
+    }
+
+    function img6_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_j }}";
+        contentName.textContent = "정지원";
+    }
+
+    function img7_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.content_h }}";
+        contentName.textContent = "홍예은";
+    }
+
+    function img_o(){
+        //console.log(event.target);  
+        content.innerHTML = "운영진이 여러분을 위해 롤링페이퍼를 작성했어요. <br> 운영진 Gather Town 캐릭터에 마우스를 올려보세요!";
+        contentName.textContent = "안녕하세요!";
     }
 
     img1.addEventListener('mouseover', img1_f);
+    img1.addEventListener('mouseout', img_o);
     img2.addEventListener('mouseover', img2_f);
+    img2.addEventListener('mouseout', img_o);
+    img3.addEventListener('mouseover', img3_f);
+    img3.addEventListener('mouseout', img_o);
+    img4.addEventListener('mouseover', img4_f);
+    img4.addEventListener('mouseout', img_o);
+    img5.addEventListener('mouseover', img5_f);
+    img5.addEventListener('mouseout', img_o);
+    img6.addEventListener('mouseover', img6_f);
+    img6.addEventListener('mouseout', img_o);
+    img7.addEventListener('mouseover', img7_f);
+    img7.addEventListener('mouseout', img_o);
+
+
 </script>
 
+
+
+{% endfor %}
 {% endblock %}

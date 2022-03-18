@@ -79,5 +79,6 @@ def agit(request):
     return render(request, 'invitation/agit.html')
 
 def rollingpaper(request):
-    rollingpaper_list = Greet.objects.all()
+    group = User.objects.get(user_id = request.user.get_username())
+    rollingpaper_list = Greet.objects.filter(name=group)  
     return render(request, 'invitation/rollingpaper.html', {'rollingpaper_list':rollingpaper_list})
