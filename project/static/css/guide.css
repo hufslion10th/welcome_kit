@@ -18,6 +18,26 @@
   }
 }
 
+#welcome-explain {
+  height: 42rem;
+  width: 70rem;
+  background-color: rgba(44, 44, 44, 0.7);
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #welcome-explain {
+    height: 35rem;
+    width: 70rem;
+    background-color: rgba(44, 44, 44, 0.7);
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+}
+
 #opacity-block-sereng {
   position: relative;
   top: 0;

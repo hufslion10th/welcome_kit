@@ -67,7 +67,7 @@
 #main {
   position: absolute;
   top: 12vh;
-  height: 60vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: center;
