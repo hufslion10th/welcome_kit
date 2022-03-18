@@ -174,9 +174,13 @@
                 <a href="{% url 'invitation:main' %}">
                     <img src="./static/img/logo.png" />
                 </a>
-                <img src="./static/img/calendar.png" />
+                <a href="{% url 'invitation:roadmap_today' %}">
+                    <img src="./static/img/calendar.png" />
+                </a>
                 <div class="vertical-divider"></div>
-                <img src="./static/img/Trash.png" />
+                <a href="{% url 'invitation:logout' %}">
+                    <img src="./static/img/Trash.png" />
+                </a>
             </div>
         </div>
 
