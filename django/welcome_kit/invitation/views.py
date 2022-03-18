@@ -41,6 +41,9 @@ def home(request):
 def main(request):
     return render(request, 'invitation/main.html')
 
+def roadmap(request):
+    return render(request, 'invitation/roadmap.html')
+
 def roadmap_FE(request):
     return render(request, 'invitation/roadmap_FE.html')
 

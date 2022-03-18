@@ -16,3 +16,8 @@
 	left: 50%;
 	transform: translate( -50%, -50% );
 }
+
+button{
+    font-family: 'Apple SD Gothic Neo', 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
