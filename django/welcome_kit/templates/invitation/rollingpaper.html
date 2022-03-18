@@ -2,9 +2,12 @@
 
 <div>
     <div style="text-align: center;margin-top: 7rem;">
-        {% for rollingpaper in rollingpaper_list %}
-        <span style="color: #FFFFFF; font-size: 3rem;">{{ rollingpaper.content_k }}</span>
-        {% endfor %}
+
+        <span style="color: #FFFFFF; font-size: 3rem;">{{rollingpaper_list[0]]}}</span>
+
+        
+
+        
 
         <div class="jb-wrap">
             <div class="jb-image">
@@ -21,22 +24,38 @@
         </div>
 
 
+
     </div>
 
     <table style="margin-left: auto; margin-right: auto;  margin-top: 5rem; font-size: 2rem; width: 80%; text-align: center;">
         <tr>
-            <td ><img src="./static/img/rollingpaper/dohwi.png" style="height: 7rem;"></td>
-            <td ><img src="./static/img/rollingpaper/sunah.png" style="height: 8rem;"></td>
-            <td ><img src="./static/img/rollingpaper/geungjun.png" style="height: 7rem;"></td>
-            <td ><img src="./static/img/rollingpaper/hwigwan.png" style="height: 8rem;"></td>
-            <td ><img src="./static/img/rollingpaper/woojin.png" style="height: 7rem;"></td>
-            <td ><img src="./static/img/rollingpaper/jiwon.png" style="height: 8rem;"></td>
-            <td ><img src="./static/img/rollingpaper/yeun.png" style="height: 6.7rem;"></td>
+            <td ><img id="img1" src="./static/img/rollingpaper/dohwi.png" style="height: 7rem;"></td>
+            <td ><img id="img2" src="./static/img/rollingpaper/sunah.png" style="height: 8rem;"></td>
+            <td ><img id="img3" src="./static/img/rollingpaper/geungjun.png" style="height: 7rem;"></td>
+            <td ><img id="img4" src="./static/img/rollingpaper/hwigwan.png" style="height: 8rem;"></td>
+            <td ><img id="img5" src="./static/img/rollingpaper/woojin.png" style="height: 7rem;"></td>
+            <td ><img id="img6" src="./static/img/rollingpaper/jiwon.png" style="height: 8rem;"></td>
+            <td ><img id="img7" src="./static/img/rollingpaper/yeun.png" style="height: 6.7rem;"></td>
         </tr>   
     </table>
 </div>
 <script>
+    const contentName = document.querySelector('#contentName');
+    const img1 = document.querySelector('#img1');
+    const img2 = document.querySelector('#img2');
 
+    function img1_f(){
+        console.log(event.target);  
+        //contentName.textContent = {{ rollingpaper_list.content_k }};
+    }
+
+    function img2_f(){
+        console.log(event.target);  
+        //contentName.textContent = {{ rollingpaper_list.content_s }};
+    }
+
+    img1.addEventListener('mouseover', img1_f);
+    img2.addEventListener('mouseover', img2_f);
 </script>
 
 {% endblock %}
