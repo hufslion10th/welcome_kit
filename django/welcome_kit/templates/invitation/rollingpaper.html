@@ -2,7 +2,9 @@
 
 <div>
     <div style="text-align: center;margin-top: 7rem;">
-        <h1 style="color: #FFFFFF; font-size: 3rem;">고도희</h1>
+        {% for rollingpaper in rollingpaper_list %}
+        <span style="color: #FFFFFF; font-size: 3rem;">{{ rollingpaper.content_k }}</span>
+        {% endfor %}
 
         <div class="jb-wrap">
             <div class="jb-image">
@@ -33,5 +35,8 @@
         </tr>   
     </table>
 </div>
+<script>
+
+</script>
 
 {% endblock %}

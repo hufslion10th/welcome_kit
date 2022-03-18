@@ -9,6 +9,7 @@ from re import template
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from users.models import User
+from greet.models import Greet
 
 def login(request):
     if request.method == "POST":
@@ -78,4 +79,5 @@ def agit(request):
     return render(request, 'invitation/agit.html')
 
 def rollingpaper(request):
-    return render(request, 'invitation/rollingpaper.html')
+    rollingpaper_list = Greet.objects.all()
+    return render(request, 'invitation/rollingpaper.html', {'rollingpaper_list':rollingpaper_list})
