@@ -1,32 +1,27 @@
 {% extends 'invitation/base.html' %} {% block content %}
 <div>
-    <div style="text-align: center; margin-top: 5rem;">
-        <h1 style="display: inline; color: #FF9E1B; font-size: 3.5rem;">설명</h1>
+    <div style="text-align: center; margin-top: 3rem;">
+        <h1 style="display: inline; color: #FF9E1B; font-size: 3.5rem;">설명 </h1>
         <h1 style="display: inline; color: #FFFFFF; font-size: 3.5rem;">해드릴게요</h1>
 
-        <h1 style="color: #FFFFFF; font-size: 1rem; margin-top: 1.2rem;">예시 미션: 깃허브 프로필 README를 꾸미기</h1>
+        <h1 style="color: #FFFFFF; font-size: 1rem; margin-top: 2.2rem;">예시 미션: 깃허브 프로필 README를 꾸미기</h1>
     </div>
 
-    <div style="margin-top: 8rem; margin-left: 6rem;">
-        <h1 style="color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">1. 빙고판을 다운로드 받는다. </h1>
-        <div>
-            <h1 style="display: inline; color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">2. 미션을 수행할 때마다 미션수행 repo에</h1>
-            <h1 style="display: inline; color: #FF9E1B; font-size: 1.5rem; line-height: 2.5rem;">수행 내역과 현재 빙고 이미지</h1>
-            <h1 style="display: inline; color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">를 올린다! </h1>
-        </div>
+    <table style="margin-left: auto; margin-right: auto;  margin-top: 4rem; font-size: 1.5rem; width: 100%; text-align: center; color: #FFFFFF;">
+        <tr>
+            <td ><img src="./static/img/bingo/bingo1.png" style="width: 12rem; border-radius: 1rem;"></td>
+            <td ><img src="./static/img/bingo/bingo2.png" style="width: 20rem; border-radius: 1rem;"></td>
+            <td ><img src="./static/img/bingo/bingo3.png" style="width: 20rem; border-radius: 1rem;"></td>
+        </tr>
+        <tr>
+            <td style="padding-top: 1.1rem;">기존 도장판</td>
+            <td style="padding-top: 1.1rem;">미션수행</td>
+            <td style="padding-top: 1.1rem;">운영진 태그</td>
+        </tr>
+        
+    </table>
 
-        <div>
-            <h1 style="display: inline; color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">3. Slack의</h1>
-            <h1 style="display: inline; color: #FF9E1B; font-size: 1.5rem; line-height: 2.5rem;">#본인이름 issue</h1>
-            <h1 style="display: inline; color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">에서 운영진을</h1>
-            <h1 style="display: inline; color: #FF9E1B; font-size: 1.5rem; line-height: 2.5rem;">태그</h1>
-            <h1 style="display: inline; color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">한다!</h1>
-        </div>
-        <h1 style="color: #FFFFFF; font-size: 1.5rem; line-height: 2.5rem;">4. 미션을 다 수행한 아기사자에게는 운영진의 선물이!? </h1>
-    
-    </div>
-
-    <button id="start-btn" style="width: 8rem; height: 4rem; float: right; margin-right: 43%; font-size: 1.3rem; text-align: center; border-color: #FF9E1B; ">오케이</button>
+    <button id="start-btn" style="width: 8rem; height: 4rem; float: right; margin-right: 43%; font-size: 1.3rem; text-align: center; border-color: #FF9E1B; margin-top: -2rem;" onclick="location.href='./bingo3';">오케이</button>
 
 
 </div>

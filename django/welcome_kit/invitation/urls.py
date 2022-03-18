@@ -20,6 +20,9 @@ urlpatterns = [
 
     path('bingo1',views.bingo1, name ='bingo1'),
     path('bingo2',views.bingo2, name ='bingo2'),
+    path('bingo3',views.bingo3, name ='bingo3'),
+    path('bingo4',views.bingo4, name ='bingo4'),
+    path('bingo5',views.bingo5, name ='bingo5'),
 
     path('agit',views.agit, name ='agit'),
 ]
