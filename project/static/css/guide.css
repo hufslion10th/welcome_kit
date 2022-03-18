@@ -193,6 +193,18 @@
   justify-content: flex-end;
   flex-direction: column;
 }
+
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #welcome-title {
+    box-sizing: border-box;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+}
 #welcome-title > p {
   color: white;
   font-size: 2.5rem;
@@ -440,7 +452,7 @@
 
 .slack-reason {
   font-size: 1.5rem;
-  height: 2rem;
+  height: auto;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -566,7 +578,17 @@
 #slack-list-four,
 #slack-list-one,
 #slack-list-one-second,
-#slack-list-one-third {
+#slack-list-one-third,
+#welcome-where,
+#welcome-where-one,
+#welcome-who,
+#welcome-who-one,
+#welcome-help,
+#welcome-help-one,
+#welcome-talk,
+#welcome-talk-one,
+#welcome-end,
+#welcome-use-notion {
   height: 42rem;
   width: 70rem;
   background-image: url(../img/lion.png);
@@ -582,7 +604,17 @@
   #slack-list-four,
   #slack-list-one,
   #slack-list-one-second,
-  #slack-list-one-third {
+  #slack-list-one-third,
+  #welcome-where,
+  #welcome-where-one,
+  #welcome-who,
+  #welcome-who-one,
+  #welcome-help,
+  #welcome-help-one,
+  #welcome-talk,
+  #welcome-talk-one,
+  #welcome-end,
+  #welcome-use-notion {
     height: 35rem;
     width: 70rem;
     background-image: url(../img/lion.png);
@@ -595,13 +627,26 @@
 
 #list-explain {
   width: 80%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 2rem;
   position: relative;
   top: -2rem;
+}
+
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #list-explain {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    position: relative;
+    top: -1rem;
+  }
 }
 #list-explain > p {
   margin-bottom: 1rem;
@@ -617,6 +662,13 @@
   top: -2rem;
 }
 
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  .slack-list-arrow {
+    position: relative;
+    top: -4rem;
+  }
+}
+
 .bold {
   font-size: 1.5rem;
   font-weight: bold;
@@ -625,19 +677,189 @@
   margin-bottom: 0 !important;
 }
 
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  .bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    top: -1rem;
+    margin-bottom: 0 !important;
+  }
+}
+
 .list-text {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 .list-text > p {
   margin-bottom: 0.5rem;
 }
 
-.explain-text {
+#welcome-where-image,
+#welcome-who-image {
+  box-sizing: border-box;
+  height: 5rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#welcome-where-image > img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #welcome-where-image > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+  }
+}
+
+#welcome-who-image > a > figure > img {
+  height: 16rem;
+  width: 36rem;
+}
+#welcome-who-image > a > figure {
   display: flex;
   flex-direction: column;
+  font-size: 1.25rem;
+  justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: 400;
+}
+#welcome-who-image > a > figure:hover {
+  color: #f5bf4f;
+}
+#welcome-who-image > a > figure:active {
+  opacity: 0.9;
+}
+#welcome-who-image > a {
+  text-decoration: none;
+}
+
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #welcome-who-image > img {
+    width: 40rem;
+    height: 16rem;
+    margin-top: 4rem;
+  }
+}
+
+#mailbox:hover {
+  opacity: 0.8;
+}
+#mailbox:active {
+  opacity: 0.7;
+}
+#mailbox > a {
+  text-decoration: none;
+}
+#mailbox > a > img {
+  width: 28rem;
+  height: 12rem;
+}
+
+#notion-begin {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+#notion-begin > img {
+  height: 10rem;
+  width: 10rem;
+}
+
+#notion-begin > figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#notion-begin > figure > a > img {
+  height: 24rem;
+  width: 32rem;
+}
+#notion-begin > figure > figcaption {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#notion-begin > figure:hover figcaption {
+  color: #f5bf4f;
+}
+
+#video {
+  box-sizing: border-box;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+#video > a {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+#welcome-who-two,
+#welcome-who-three,
+#welcome-who-four,
+#welcome-who-five,
+#welcome-who-six,
+#welcome-who-seven,
+#welcome-who-eight,
+#welcome-who-nine {
+  height: 42rem;
+  width: 70rem;
+  background-color: black;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-height: 730px) and (max-height: 830px) {
+  #welcome-who-two,
+  #welcome-who-three,
+  #welcome-who-four,
+  #welcome-who-five,
+  #welcome-who-six,
+  #welcome-who-seven,
+  #welcome-who-eight,
+  #welcome-who-nine {
+    height: 35rem;
+    width: 70rem;
+    background-color: black;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#video-player {
+  width: 100%;
+  height: 80%;
+}
+
+.subscription {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  top: -8rem;
+  margin-bottom: 0.5rem;
 }
