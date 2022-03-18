@@ -1,0 +1,70 @@
+#bingo-block {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bingo-title {
+    box-sizing: border-box;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bingo-title > span:first-child {
+    color: #ff9e1b;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#bingo-title > span:last-child {
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+#bingo-explanation {
+    box-sizing: border-box;
+    width: 80%;
+    height: 30%;
+}
+
+#bingo-explanation > p {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#bingo-button {
+    box-sizing: border-box;
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bingo-button > button {
+    border: #ff9e1b solid 1px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#bingo-button > button:hover {
+    border: #ff9e1b solid 2px;
+}
+
+#bingo-button > button:active {
+    opacity: 0.8;
+}
