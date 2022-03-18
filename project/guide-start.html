@@ -1525,15 +1525,15 @@
               </p>
           </div>
           <div id="arrow">
-            <a href="#welcome-who-one">
+            <a href="#welcome-who">
               <i class="fa-solid fa-angle-left"></i>
             </a>
-            <a href="#welcome-who-three">
+            <a href="#welcome-help-one">
               <i class="fa-solid fa-angle-right"></i>
             </a>
           </div>
         </div> 
-
+        
         <div id="welcome-help-one">
           <div id="window-header">
             <div id="traffic-light">
@@ -1549,31 +1549,205 @@
             </div>
             <p>Welcome to LIKELION</p>
           </div>
-          <div id="guide-title" style="position:relative; top:-6rem;">
-            <p>도움이 필요하다면? (컨텐츠 미완)</p>
-          </div>
-
-          <div id="guide-phrase" style="position:relative; top:-6rem">
-                            <p>
-
-                  멋쟁이사자처럼:한국외대는 <span class="colored">총 24명</span>의 10기 인원과 함께 시작해요.
-              </p>
-
-            <div id="welcome-who-image">
-                <img src="./static/img/backend.png" alt="">
-                <img src="./static/img/frontend.png" alt="">
-                <img src="./static/img/pm-design.png" alt="">
+          <div id="guide-phrase">
+            <div id="slack-choice">
+              <a class="guide-btn" href="#help-who">누구에게 질문하나요?</a>
+              <a class="guide-btn" href="#help-how">어떻게 질문하나요?</a
+              ><a class="guide-btn" href="#help-what">무엇을 조심할까요?</a>
             </div>
           </div>
-          <div id="arrow" style="position:relative; top:-2rem;">
+          <div id="arrow">
             <a href="#welcome-help">
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <a href="#welcome-talk">
+              <i class="fa-solid fa-angle-right"></i>
+            </a>            
+          </div>
+        </div>        
+
+        <div id="help-who">
+          <div id="window-header">
+            <div id="traffic-light">
+              <div class="circle">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
+            </div>
+            <p>Welcome to LIKELION</p>
+          </div>
+          <div id="welcome-title">
+            <p id="github-title">누구에게 질문하나요?</p>
+          </div>
+
+          <div id="guide-phrase">
+            <p class="slack-reason">
+                -
+                <span class="colored">
+                    세션에 관한 질문
+                </span>
+                이 있다면 #_10기학생질문 채널에서 
+                <span class="colo">
+                    세션 진행자를 태그
+                </span>
+                하세요.                
+            </p>
+            <p class="slack-reason">
+                -
+                <span class="colore">
+                    세션 외
+                </span>
+                 질문이라면 #_10기학생질문에 태그 없이 질문을 올려주세요. 
+            </p>
+            <p class="slack-reason">
+                -
+                뭔가 이상한데 뭐가 어떻게 왜 문제가 되는지 아무것도 모르겠다면? 
+            </p>
+            <p class="slack-reason">
+                &nbsp;&nbsp;뒤로 돌아가 <span class="colored">
+                    ‘무엇을 조심할까요?’
+                </span>
+                 항목으로 가세요.
+            </p>
+            <p class="slack-reason">
+                - 코딩 에러는 아니지만 같이 논의하고 싶은 내용이 있다면? 
+                    
+            </p>
+            <p class="slack-reason">&nbsp;&nbsp;#_전체잡담 또는 #_전체질문을 이용해주세요.</p>
+          </div>
+          <div id="arrow">
+            <a href="#welcome-help-one">
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <a href="#help-how">
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div> 
+        
+        <div id="help-how">
+          <div id="window-header">
+            <div id="traffic-light">
+              <div class="circle">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
+            </div>
+            <p>Welcome to LIKELION</p>
+          </div>
+          <div id="welcome-title">
+            <p id="github-title">어떻게 질문하나요?</p>
+          </div>
+
+          <div id="guide-phrase">
+              <p class="bold">
+                  좋은 질문에서 좋은 답변이 나와요. 아래의 내용을 참고해주세요.
+              </p>
+            <p class="slack-reason">
+                -
+                <span class="colored">
+                    목표
+                </span>
+                로 하는 상황을 알려주세요: Python으로 Hello World를 출력하고 싶어요         
+            </p>
+            <p class="slack-reason">
+                -
+                무엇을 
+                <span class="colored">
+                    시도
+                </span>
+                했는지 알려주세요: printf(“Hello World”)를 실행했어요.
+            </p>
+            <p class="slack-reason">
+                -
+                결과와 에러를 알려주세요: <span class="colored">
+                    모든 에러 메시지를 텍스트로
+                </span> 
+                 복사, 붙여넣기해주세요. <br/>내용이 많을테니 스레드 사용을 권장해요.
+                 
+            </p>
+            <p class="slack-reason">
+                개발 환경을 알려주세요: 버전, 디렉토리 구조 등 에러는 어디서든 일어날 수 있어요.
+            </p>
+
+          </div>
+          <div id="arrow">
+            <a href="#help-who">
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <a href="#help-what">
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>           
+        
+        <div id="help-what">
+          <div id="window-header">
+            <div id="traffic-light">
+              <div class="circle">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+              <div class="circle">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
+            </div>
+            <p>Welcome to LIKELION</p>
+          </div>
+          <div id="welcome-title">
+            <p id="github-title">무엇을 조심할까요?</p>
+          </div>
+
+          <div id="guide-phrase">
+            <p class="slack-reason">
+                -
+                <span class="colored">
+                    ✋ 너무 사소한 질문이라 걱정돼요
+                </span>
+            </p>
+            <p class="slack-reason">
+                내가 궁금하면 다른 사람도 궁금해요. 코딩 질문은 질문 채널을 이용해주세요.
+            </p> 
+            <p class="slack-reason">
+                -
+                <span class="colored">
+                    ✋ DM으로 질문하면 안되나요?
+                </span>
+            </p> 
+            <p class="slack-reason">
+                삭제는 지양해요. StackOverFlow와 개발 블로그의 도움을 잊지 말도록 해요. 
+            </p>   
+            <p class="slack-reason">
+                -
+                <span class="colored">
+                    ✋ 너무너무 급한 질문이에요. 어떡하죠?
+                </span>
+            </p>     
+            <p class="slack-reason">
+                어떡하죠? Gather Town으로 와보세요. 아지트에 운영진이 있다면 반갑게 답변해드릴거예요.                      
+            </p>
+          </div>
+          <div id="arrow">
+            <a href="#help-how">
               <i class="fa-solid fa-angle-left"></i>
             </a>
             <a href="#welcome-talk">
               <i class="fa-solid fa-angle-right"></i>
             </a>
           </div>
-        </div>       
+        </div>            
         
         <div id="welcome-talk">
           <div id="window-header">
