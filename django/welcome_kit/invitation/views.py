@@ -29,6 +29,12 @@ def login(request):
     else:
         return render(request, "invitation/index.html")
 
+from django.contrib.auth import logout
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')
+
 def home(request):
     return render(request, 'invitation/index.html')
 
@@ -46,3 +52,12 @@ def roadmap_PMD(request):
 
 def roadmap_today(request):
     return render(request, 'invitation/roadmap_today.html')
+
+def doctor(request):
+    return render(request, 'invitation/doctor.html')
+
+def bingo1(request):
+    return render(request, 'invitation/bingo1.html')
+
+def bingo2(request):
+    return render(request, 'invitation/bingo2.html')
