@@ -64,3 +64,6 @@ def bingo2(request):
 
 def agit(request):
     return render(request, 'invitation/agit.html')
+
+def guide(request):
+    return render(request,'invitation/guide-start.html')

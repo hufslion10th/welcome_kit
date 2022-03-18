@@ -22,4 +22,5 @@ urlpatterns = [
     path('bingo2',views.bingo2, name ='bingo2'),
 
     path('agit',views.agit, name ='agit'),
+    path('guide', views.guide,name='guide')
 ]
