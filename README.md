@@ -39,13 +39,13 @@
 
 | 홍예은|정우진|박경준|
 |:---:|:---:|:---:|
-| PdM, 기획, UIUX | BE Tech Lead, deploy | FE Tech Lead |
+| Team Lead, 기획, UIUX | BE Tech Lead, deploy | FE Tech Lead |
 |<img src="https://avatars.githubusercontent.com/u/60145951?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/81296203?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/75518683?v=4" height=100/>|
 |[@4923](https://github.com/4923)|[@JungWooJin97](https://github.com/JungWooJin97)|[@Parkjju](https://github.com/Parkjju)
 
 |민선아|고도희|정지원|설희관|
 |:---:|:---:|:---:|:---:|
-| UIUX | 기획 | 기획 | BE, FE |
+| UIUX, 기획 | UIUX, 기획, FE | 기획 | BE, FE |
 |<img src="https://avatars.githubusercontent.com/u/60880176?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/81297662?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/79279500?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/67581495?v=4" height=100/>|
 |[@hotsun1508](https://github.com/hotsun1508)|[@DohuiKo](https://github.com/DohuiKo)|[@jiwongut](https://github.com/jiwongut)|[@SeolHuiGwan9478](https://github.com/SeolHuiGwan9478)|
 
