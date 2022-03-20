@@ -29,4 +29,5 @@ urlpatterns = [
 
     path('rollingpaper',views.rollingpaper, name ='rollingpaper'),
 
+    path('guidestart',views.guidestart, name ='guidestart'),
 ]
