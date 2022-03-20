@@ -7,7 +7,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, Permis
 from .choice import *
 
 class UserManager(BaseUserManager):
-    def create_user(self, user_id, password, name, modifier, department, grade, track, leader, value, interest, student1, student1_intro, student2, student2_intro, **extra_fields):
+    def create_user(self, user_id, password, name, modifier, department, grade, track, leader, value, interest, student1, student1_intro, student1_value1, student1_value2, student1_value3, student2, student2_intro, student2_value1, student2_value2, student2_value3, **extra_fields):
         user = self.model(
             user_id = user_id,
             name = name,
@@ -18,10 +18,18 @@ class UserManager(BaseUserManager):
             leader = leader,
             value = value,
             interest = interest,
+
             student1 = student1,
             student1_intro = student1_intro,
+            student1_value1 = student1_value1,
+            student1_value2 = student1_value2,
+            student1_value3 = student1_value3,
+
             student2 = student2,
             student2_intro = student2_intro,
+            student2_value1 = student2_value1,
+            student2_value2 = student2_value2,
+            student2_value3 = student2_value3,
 
             **extra_fields
         )
@@ -29,8 +37,8 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, user_id, password, name=None, modifier=None, department=None, grade=None, track=None, leader=None, value=None, interest=None, student1=None, student1_intro=None, student2=None, student2_intro=None):
-        user = self.create_user(user_id, password, name, modifier, department, grade, track, leader, value, interest,  student1, student1_intro, student2, student2_intro)
+    def create_superuser(self, user_id, password, name=None, modifier=None, department=None, grade=None, track=None, leader=None, value=None, interest=None, student1=None, student1_intro=None, student1_value1=None, student1_value2=None, student1_value3=None ,student2=None, student2_intro=None,  student2_value1=None, student2_value2=None, student2_value3=None ):
+        user = self.create_user(user_id, password, name, modifier, department, grade, track, leader, value, interest,  student1, student1_intro, student1_value1, student1_value2, student1_value3, student2, student2_intro, student2_value1, student2_value2, student2_value3)
         user.is_superuser = True
         user.is_staff = True
         user.is_admin = True
@@ -56,8 +64,15 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     student1 = models.CharField(max_length=8, verbose_name="추천1", null=True)
     student1_intro = models.TextField(max_length=256, verbose_name="추천1 설명", null=True)
+    student1_value1 = models.CharField(max_length=8, verbose_name="추천1 가치1", null=True)
+    student1_value2 = models.CharField(max_length=8, verbose_name="추천1 가치2", null=True)
+    student1_value3 = models.CharField(max_length=8, verbose_name="추천1 가치3", null=True)
+
     student2 = models.CharField(max_length=8, verbose_name="추천2", null=True)
     student2_intro = models.TextField(max_length=256, verbose_name="추천2 설명", null=True)
+    student2_value1 = models.CharField(max_length=8, verbose_name="추천2 가치1", null=True)
+    student2_value2 = models.CharField(max_length=8, verbose_name="추천2 가치2", null=True)
+    student2_value3 = models.CharField(max_length=8, verbose_name="추천2 가치3", null=True)
 
 
     is_active = models.BooleanField(default=True)

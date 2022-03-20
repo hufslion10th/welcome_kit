@@ -9,6 +9,7 @@ from re import template
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from users.models import User
+from greet.models import Greet
 
 def login(request):
     if request.method == "POST":
@@ -41,6 +42,9 @@ def home(request):
 def main(request):
     return render(request, 'invitation/main.html')
 
+def roadmap(request):
+    return render(request, 'invitation/roadmap.html')
+
 def roadmap_FE(request):
     return render(request, 'invitation/roadmap_FE.html')
 
@@ -61,6 +65,15 @@ def bingo1(request):
 
 def bingo2(request):
     return render(request, 'invitation/bingo2.html')
+
+def bingo3(request):
+    return render(request, 'invitation/bingo3.html')
+
+def bingo4(request):
+    return render(request, 'invitation/bingo4.html')
+
+def bingo5(request):
+    return render(request, 'invitation/bingo5.html')
 
 def agit(request):
     return render(request, 'invitation/agit.html')

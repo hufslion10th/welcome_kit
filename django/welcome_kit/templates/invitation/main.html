@@ -20,7 +20,7 @@
         <p>자주 방문할 웹 사이트</p>
         <div id="visit-img">
             <figure>
-                <a href="{% url 'invitation:roadmap_FE' %}">
+                <a href="{% url 'invitation:roadmap' %}">
                     <img src="./static/img/roadmap.png" alt="" />
                 </a>
                 <figcaption>likelion-10th.plan</figcaption>
@@ -48,7 +48,9 @@
                 <figcaption>아기사자로살아남기.guide</figcaption>
             </figure>
             <figure>
-                <img src="./static/img/introduce.png" alt="" />
+                <a href="{% url 'invitation:rollingpaper' %}">
+                    <img src="./static/img/introduce.png" alt="" />
+                </a>
                 <figcaption>rolling-paper.forU</figcaption>
             </figure>
         </div>

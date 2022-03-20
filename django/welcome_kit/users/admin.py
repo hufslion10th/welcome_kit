@@ -19,8 +19,14 @@ class UserAdmin(admin.ModelAdmin):
         'interest',
         'student1',
         'student1_intro',
+        'student1_value1',
+        'student1_value2',
+        'student1_value3',
         'student2',
-        'student2_intro'
+        'student2_intro',
+        'student2_value1',
+        'student2_value2',
+        'student2_value3'
         )
     search_fields = ('user_id', 'name', 'department')
 
