@@ -4,18 +4,13 @@
     <div style="text-align: center;margin-top: 7rem;">
         {% for rollingpaper in rollingpaper_list %}
         <span id="contentName" style="color: #FFFFFF; font-size: 3rem;">안녕하세요!</span>
-
-        
-
-        
-
         <div class="jb-wrap">
             <div class="jb-image">
-                <img src="./static/img/rollingpaper/Rec.png" style="height: 9rem; margin-top: 2rem;">
+                <img src="./static/img/rollingpaper/Rec.png" style="height: 9rem; margin-top: 2rem; position: relative;">
             </div>
-    
+
             <div class="jb-text">
-                <p id="content" style="color: #FFFFFF; text-align: center;">
+                <p id="content" style="color: #FFFFFF; text-align: center; line-height: 110%;">
                         운영진이 여러분을 위해 롤링페이퍼를 작성했어요.
                         <br>
                         운영진 Gather Town 캐릭터에 마우스를 올려보세요!
@@ -39,7 +34,8 @@
         </tr>   
     </table>
 </div>
-<script>
+
+<script type="text/javascript">
     const content = document.querySelector('#content');
     const contentName = document.querySelector('#contentName');
     const img1 = document.querySelector('#img1');
@@ -51,13 +47,13 @@
     const img7 = document.querySelector('#img7');
 
     function img1_f(){
-        //console.log(event.target);  
+        console.log(event.target);  
         content.textContent = "{{ rollingpaper.content_k }}";
         contentName.textContent = "고도희";
     }
 
     function img2_f(){
-        //console.log(event.target);  
+        console.log(event.target);  
         content.textContent = "{{ rollingpaper.content_m }}";
         contentName.textContent = "민선아";
     }
@@ -115,8 +111,6 @@
 
 
 </script>
-
-
 
 {% endfor %}
 {% endblock %}

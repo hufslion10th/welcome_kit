@@ -53,7 +53,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     user_id = models.CharField(max_length=17, verbose_name="아이디", unique=True)
     password = models.CharField(max_length=256, verbose_name="비밀번호")
     name = models.CharField(max_length=8, verbose_name="이름", null=True)
-    modifier = models.CharField(max_length=8, verbose_name="수식어", null=True)
+    modifier = models.CharField(max_length=16, verbose_name="수식어", null=True)
     department = models.CharField(max_length=24, verbose_name="학과", null=True)
     grade = models.CharField(choices=GRADE_CHOICES, max_length=18, verbose_name="학년", null=True)
     track = models.CharField(choices=TRACK_CHOICES, max_length=18, verbose_name="트랙", null=True)
