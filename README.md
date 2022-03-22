@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white">
 <br>
-  <h1>https://welcomekit.herokuapp.com/</h1>
+  <h2>https://welcomekit.herokuapp.com/</h2>
 </div>
 
 <br>
