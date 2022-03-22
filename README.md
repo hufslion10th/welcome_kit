@@ -1,5 +1,3 @@
-https://welcomekit.herokuapp.com/
-<br>
 <div align="center">
 
 <a href="https://github.com/hufslion10th"> <img src="https://user-images.githubusercontent.com/60145951/158914541-46bae0c2-28f7-46d7-80f4-6a7cb3e15579.png" height=100/> </a>
@@ -8,6 +6,8 @@ https://welcomekit.herokuapp.com/
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white">
+<br>
+  <h1>https://welcomekit.herokuapp.com/</h1>
 </div>
 
 <br>
