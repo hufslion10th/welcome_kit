@@ -43,7 +43,7 @@
 |:---:|:---:|:---:|
 | Team Lead, 기획, UIUX | BE Tech Lead, deploy | FE Tech Lead |
 |<img src="https://avatars.githubusercontent.com/u/60145951?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/81296203?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/75518683?v=4" height=100/>|
-|[@4923](https://github.com/4923)|[@JungWooJin97](https://github.com/JungWooJin97)|[@Parkjju](https://github.com/Parkjju)
+|[@4923](https://github.com/4923)|[@wJJin](https://github.com/wJJin)|[@Parkjju](https://github.com/Parkjju)
 
 |민선아|고도희|정지원|설희관|
 |:---:|:---:|:---:|:---:|
