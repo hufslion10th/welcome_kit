@@ -1,0 +1,85 @@
+{% extends 'invitation/base.html' %}{% block content %}
+{% load static %}
+
+<div id="main-content">
+
+  <div id="bookmark">
+    <p>즐겨찾기</p>
+    <div id="bookmark-img">
+
+      <a href="https://github.com/hufslion11th" target="_blank">
+        <img src="{% static 'img/main/github.png' %}" alt="" />
+      </a>
+      <a href="https://techit.education/" target="_blank">
+        <img src="{% static 'img/main/teckit.jpeg' %}" alt="" style="border-radius: 5px;"/>
+      </a>
+      <a href="https://hufsglobal.notion.site/ece28870debd4c50b943266433f284cc" target="_blank">
+        <img src="{% static 'img/main/notion.png' %}" alt="" />
+      </a>
+    </div>
+  </div>
+  
+  <div id="visit">
+    <p>자주 방문할 웹 사이트</p>
+    <div id="visit-img">
+      
+      <figure>
+        <a href="/roadmap">
+          <img src="{% static 'img/main/roadmap.png' %}" alt="" />
+        </a>
+        <figcaption>
+            likelion-10th.plan
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <a
+          href="https://app.gather.town/app/wKWe3Hk7uxhS9QSk/Likelion%2010th%20Study"
+          target="_blank">
+          <img src="{% static 'img/main/gather.png' %}" alt="" />
+        </a>
+        <figcaption>
+          아지트를 소개합니다.hideout
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <a href="/doctor">
+          <img src="{% static 'img/main/togather.png' %}" alt="" />
+        </a>
+        <figcaption>
+          개발은 혼자하기 위험하단다!
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <a href="/bingo">
+          <img src="{% static 'img/main/bingo.png' %}" alt="" />
+        </a>
+        <figcaption>
+          아기사자를위한.quest
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <a href="/guidestart">
+          <img src="{% static 'img/main/coding.png' %}" alt="" />
+        </a>
+        <figcaption>
+          아기사자로살아남기.guide
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <a href="/rollingpaper">
+          <img src="{% static 'img/main/introduce.png' %}" alt="" />
+        </a>
+        <figcaption>
+          rolling-paper.forU
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'invitation/base.html' %} {% block content %}
+{% load static %}
+
+<div>
+    <div style="text-align: center; margin-top: 2rem;">
+        <h1 style="display: inline; color: #FF9E1B;font-size: 3.5rem;">
+            멋쟁이사자처럼
+        </h1>
+        <h1 style="display: inline; color: #FFFFFF; font-size: 2rem;">
+            올해는 어떤가요?
+        </h1>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <img src="{% static 'img/roadmap_today/up.png' %}"
+             style="width: 70%; opacity: 0.75; filter: brightness(120%)" />
+        <img src="{% static 'img/roadmap_today/down.png' %}"
+             style="width: 70%; opacity: 0.75; filter: brightness(120%);"/>
+    </div>
+</div>
+
+
+{% endblock %}

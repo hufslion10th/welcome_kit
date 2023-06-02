@@ -1,0 +1,203 @@
+@import '../css/reset.css';
+@import '../css/splash.css';
+@import '../css/bookmark.css';
+
+@import url(//db.onlinewebfonts.com/c/5a9f693a1affe1c64c2cf97a146a7986?family=APPLE);
+
+@font-face {
+  font-family: 'APPLE';
+  src: url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.eot');
+  src: url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.eot?#iefix')
+       format('embedded-opentype'),
+       url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.woff2')
+       format('woff2'),
+       url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.woff')
+       format('woff'),
+       url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.ttf')
+       format('truetype'),
+       url('//db.onlinewebfonts.com/t/5a9f693a1affe1c64c2cf97a146a7986.svg#APPLE')
+       format('svg');
+}
+
+@keyframes confetti-slow {
+  0% {transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);}
+  100% {transform: translate3d(1.5625rem, 105vh, 0) rotateX(360deg) rotateY(180deg);}
+}
+@keyframes confetti-medium {
+  0% {transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);}
+  100% {transform: translate3d(6.25rem, 105vh, 0) rotateX(100deg) rotateY(360deg);}
+}
+@keyframes confetti-fast {
+  0% {transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);}
+  100% {transform: translate3d(-3.125rem, 105vh, 0) rotateX(10deg) rotateY(250deg);}
+}
+
+body {
+  font-family: 'Apple SD Gothic Neo', 'Josefin Sans', sans-serif;
+}
+
+#background-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 입장 버튼 */
+#start-btn {
+  color: #cccccc;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  width: 45vw;
+  height: 50vh;
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+  top: 5rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.1s linear;
+}
+
+#start-btn:hover {
+  border: 2px solid #cccccc;
+}
+
+/* 환영페이지 레이아웃 */
+#welcome-block {
+  height: 30vh;
+  width: 60vw;
+  color: #cccccc;
+  position: relative;
+  top: -10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* 인사 문구 컨테이너 */
+#welcome-block__greet {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+}
+
+/* 인사 문구 텍스트 */
+.welcome-block__greet-text {
+  /* font-weight: ; */
+  width: 30vw;
+}
+
+.welcome-block__greet-text:first-child {
+  font-size: 6rem;
+  line-height: 7rem;
+  text-align: end;
+  padding-right: 3rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+}
+
+.welcome-block__greet-text:last-child {
+  text-align: start;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.confetti-container {
+  perspective: 43.75rem;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* 로그인 버튼 슬라이드 애니메이션 */
+.hide {
+  display: none;
+}
+
+.visible {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+  color: #cccccc;
+  font-size: 2rem;
+  width: 2rem;
+  transition: 0.1s linear;
+}
+
+.visible:focus,
+.visible:valid {
+  width: 5.5rem;
+}
+
+/* animation */
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -0.625rem;
+  border-radius: 0%;
+}
+.confetti--animation-slow {
+  animation: confetti-slow 2.25s linear 1 forwards;
+}
+.confetti--animation-medium {
+  animation: confetti-medium 1.75s linear 1 forwards;
+}
+.confetti--animation-fast {
+  animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+#no-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #no-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #cccccc;
+    font-size: 2rem;
+    background-color: black;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  #no-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #cccccc;
+    font-size: 2rem;
+    background-color: black;
+  }
+}

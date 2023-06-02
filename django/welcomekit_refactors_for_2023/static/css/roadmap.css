@@ -1,0 +1,157 @@
+.rdp-intro {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.rdp-plain {
+  display: inline;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.rdp-highlight {
+  display: inline;
+  color: #FF9E1B;
+  font-size: 3.5rem;
+}
+
+.rdp-content {
+  margin-top: -4rem;
+}
+
+.rdp-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.rdp-btn {
+  width: 30rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight:700;
+  text-align: center;
+  color: #cccccc;
+  background-color: transparent;
+  border: 1px solid #FF9E1B;
+  border-radius: 3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+  top: 5rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.1s linear;
+}
+
+.rdp-btnpad {
+  padding-top: 2rem;
+}
+
+.rdp-back {
+  margin-top: 9rem;
+  text-align: center;
+}
+
+.rdp-backtag {
+  display: inline;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.rdp-backlight {
+  display: inline;
+  color: #FF9E1B;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.rdp-flag {
+  display: inline;
+  width: 6rem;
+}
+
+.rdp-exhead {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.rdp-explain {
+  margin-top: 1rem;
+  margin-left: 7rem;
+  color: #99999960;
+  font-size: 2rem;
+}
+
+.rdp-introhead {
+  margin-top: 2rem;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.rdp-imgtable {
+  margin-top: 2rem; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.rdp-th {
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+.rdp-tbgit {
+  width: 5.5rem;
+  border-radius: 1rem;
+}
+
+.rdp-imgraw {
+  width: 12rem;
+}
+
+.rdp-simgraw {
+  width: 6rem;
+}
+
+.rdp-mimgraw {
+  width: 15rem;
+}
+
+.rdp-bimgraw {
+  width: 17rem;
+}
+
+.rdp-overimg {
+  text-align: center;
+}
+
+.rdp-oitext {
+  display: inline;
+  margin-top: 2rem;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.rdp-oihighlight {
+  display: inline;
+  color: #FF9E1B;
+  font-size: 1.1rem;
+  line-height: 4rem;
+}
+
+.bd-radious {
+  border-radius: 1rem;
+}
+
+.rdp-td {
+  vertical-align: top;
+  padding-top: 2rem;
+}

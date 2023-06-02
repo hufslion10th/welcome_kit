@@ -1,0 +1,49 @@
+{% extends 'invitation/base.html' %} {% block content %}
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/bingo.css' %}" />
+</head>
+
+<body>
+  <div id="content_div">
+
+    <div class="bgo-welcome">
+      <h1 class="bgo-plain">게임 한 판 </h1>
+      <h1 class="bgo-highlight">어떠세요? </h1>
+    </div>
+
+    <div class="bgo-extxt">
+
+      <h1 class="bgo-extop">1. 빙고판을 다운로드 받는다. </h1>
+
+      <div>
+        <h1 class="bgo-exwhite">2. 미션을 수행할 때마다 미션수행 repo에</h1>
+        <h1 class="bgo-exorange">수행 내역과 현재 빙고 이미지</h1>
+        <h1 class="bgo-exwhite">를 올린다! </h1>
+      </div>
+
+      <div>
+        <h1 class="bgo-exwhite">3. Slack의</h1>
+        <h1 class="bgo-exorange">#본인이름 issue</h1>
+        <h1 class="bgo-exwhite">에서 운영진을</h1>
+        <h1 class="bgo-exorange">태그</h1>
+        <h1 class="bgo-exwhite">한다!</h1>
+      </div>
+      
+      <h1 class="bgo-extop">4. 미션을 다 수행한 아기사자에게는 운영진의 선물이!? </h1>
+    
+    </div>
+    <div class="centerbutton">
+      <button
+      class="bgo-btn"
+      onClick="window.open('https://github.com/hufslion11th/BINGO')">
+      오케이!
+    </button>
+    </div>
+
+  </div>
+</body>
+
+
+{% endblock %}

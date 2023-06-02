@@ -1,0 +1,161 @@
+{% extends 'invitation/base.html' %} {% block content %}
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/rollingpaper.css' %}" />
+</head>
+
+<div>
+    <div style="text-align: center;margin-top: 3rem;">
+        {% for rollingpaper in rollingpaper_list %}
+        <span id="contentName" style="color: #FFFFFF; font-size: 3rem;">안녕하세요!</span>
+        <div class="jb-wrap">
+            <div class="jb-image">
+                <img src="{% static './img/rollingpaper/Rec.png' %}" style="height: 9rem; margin-top: 2rem; position: relative;">
+            </div>
+            <div class="jb-text">
+                <p id="content" style="color: #FFFFFF; text-align: center; line-height: 110%;">
+                        운영진이 여러분을 위해 롤링페이퍼를 작성했어요.
+                        <br>
+                        운영진 Gather Town 캐릭터에 마우스를 올려보세요!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <table style="margin-left: auto; margin-right: auto;  margin-top: 3rem; font-size: 2rem; width: 80%; text-align: center;">
+        <tr>
+            <td ><img id="img1" src="{% static './img/rollingpaper/강민.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img2" src="{% static './img/rollingpaper/동현.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img3" src="{% static './img/rollingpaper/민솔.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img4" src="{% static './img/rollingpaper/성민.png' %}" style="height: 6rem;"></td>
+            <td ><img id="img5" src="{% static './img/rollingpaper/승호.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img6" src="{% static './img/rollingpaper/예람.png' %}" style="height: 7rem;"></td>
+        </tr>  
+        <tr>
+            <td ><img id="img7" src="{% static './img/rollingpaper/우진.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img8" src="{% static './img/rollingpaper/윤경.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img9" src="{% static './img/rollingpaper/재성.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img10" src="{% static './img/rollingpaper/재우.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img11" src="{% static './img/rollingpaper/h예은.png' %}" style="height: 7rem;"></td>
+            <td ><img id="img12" src="{% static './img/rollingpaper/k예은.png' %}" style="height: 7rem;"></td>
+        </tr> 
+    </table>
+</div>
+
+<script type="text/javascript">
+    const content = document.querySelector('#content');
+    const contentName = document.querySelector('#contentName');
+    const img1 = document.querySelector('#img1');
+    const img2 = document.querySelector('#img2');
+    const img3 = document.querySelector('#img3');
+    const img4 = document.querySelector('#img4');
+    const img5 = document.querySelector('#img5');
+    const img6 = document.querySelector('#img6');
+    const img7 = document.querySelector('#img7');
+    const img8 = document.querySelector('#img8');
+    const img9 = document.querySelector('#img9');
+    const img10 = document.querySelector('#img10');
+    const img11 = document.querySelector('#img11');
+    const img12 = document.querySelector('#img12');
+    
+
+    function img1_f(){
+        content.textContent = "{{ rollingpaper.kim }}";
+        contentName.textContent = "김강민";
+    }
+    function img2_f(){
+        console.log(event.target);  
+        content.textContent = "{{ rollingpaper.one }}";
+        contentName.textContent = "원동현";
+    }
+
+    function img3_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.min }}";
+        contentName.textContent = "조민솔";
+    }
+
+    function img4_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.cho }}";
+        contentName.textContent = "조성민";
+    }
+
+    function img5_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.win }}";
+        contentName.textContent = "최승호";
+    }
+
+    function img6_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.yes }}";
+        contentName.textContent = "임예람";
+    }
+    function img7_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.cwj }}";
+        contentName.textContent = "정우진";
+    }
+    function img8_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.kyk }}";
+        contentName.textContent = "김윤경";
+    }
+    function img9_f(){
+        content.textContent = "{{ rollingpaper.sim }}";
+        contentName.textContent = "심재성";
+    }
+    function img10_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.cha }}";
+        contentName.textContent = "김재우";
+    }
+    function img11_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.hye }}";
+        contentName.textContent = "홍예은";
+    }
+    function img12_f(){
+        //console.log(event.target);  
+        content.textContent = "{{ rollingpaper.kye }}";
+        contentName.textContent = "김예은";
+    }
+
+
+    function img_o(){
+        //console.log(event.target);  
+        content.innerHTML = "운영진이 여러분을 위해 롤링페이퍼를 작성했어요. <br> 운영진 Gather Town 캐릭터에 마우스를 올려보세요!";
+        contentName.textContent = "안녕하세요!";
+    }
+
+    img1.addEventListener('mouseover', img1_f);
+    img1.addEventListener('mouseout', img_o);
+    img2.addEventListener('mouseover', img2_f);
+    img2.addEventListener('mouseout', img_o);
+    img3.addEventListener('mouseover', img3_f);
+    img3.addEventListener('mouseout', img_o);
+    img4.addEventListener('mouseover', img4_f);
+    img4.addEventListener('mouseout', img_o);
+    img5.addEventListener('mouseover', img5_f);
+    img5.addEventListener('mouseout', img_o);
+    img6.addEventListener('mouseover', img6_f);
+    img6.addEventListener('mouseout', img_o);
+    img7.addEventListener('mouseover', img7_f);
+    img7.addEventListener('mouseout', img_o);
+    img8.addEventListener('mouseover', img8_f);
+    img8.addEventListener('mouseout', img_o);
+    img9.addEventListener('mouseover', img9_f);
+    img9.addEventListener('mouseout', img_o);
+    img10.addEventListener('mouseover', img10_f);
+    img10.addEventListener('mouseout', img_o);
+    img11.addEventListener('mouseover', img11_f);
+    img11.addEventListener('mouseout', img_o);
+    img12.addEventListener('mouseover', img12_f);
+    img12.addEventListener('mouseout', img_o);
+
+
+</script>
+
+{% endfor %}
+{% endblock %}

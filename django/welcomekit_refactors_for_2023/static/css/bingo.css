@@ -1,0 +1,67 @@
+.bgo-welcome {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.bgo-plain {
+  display: inline;
+  color: #FF9E1B;
+  font-size: 3.5rem;
+}
+
+.bgo-highlight {
+  display: inline;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.bgo-extxt {
+  margin-top: 8rem;
+  margin-left: 6rem;
+}
+
+.bgo-extop {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}  
+
+.bgo-exwhite {
+  display: inline;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.bgo-exorange {
+  display: inline;
+  color: #FF9E1B;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.bgo-btn {
+  position: relative;
+  color: #cccccc;
+  background-color: transparent;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 8rem;
+  height: 4rem;
+  border: 1px solid #FF9E1B;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  text-align: center; 
+  top: 5rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.1s linear;
+}
+
+.bgo-btn:hover {
+  border: 2px solid #cccccc;
+}
+
+.centerbutton {
+  text-align: center;
+}

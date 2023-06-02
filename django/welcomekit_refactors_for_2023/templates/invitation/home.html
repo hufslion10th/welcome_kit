@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11기 아기사자들을 환영합니다!</title>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script src="https://kit.fontawesome.com/1390e41385.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <img id="background-img" src="{% static 'img/lion_background.jpg' %}" />
+
+    <!-- congrats effect -->
+    <div class="js-container container"><div id="welcome-block">
+
+      <div id="welcome-block__greet">
+        <p class="welcome-block__greet-text">
+          아기사자<br />
+          <span>
+            {{ user.name }}님
+          </span>
+        </p>
+        <p class="welcome-block__greet-text">
+          멋쟁이사자처럼에<br />
+          합류하신 것을<br />
+          환영합니다.
+        </p>
+      </div>
+      
+      {% if user.is_authenticated %}
+
+      <button id="start-btn" onclick = "location.href= '/main' ">
+        버튼을 눌러 이동해주세요!
+      </button>
+
+      {% else %}
+
+      <button id="start-btn">
+        Let's on-board
+        <form action="" method="POST" name="login">
+          {% csrf_token %}
+          
+          <input
+            type="text"
+            name="username"
+            class="hide"
+            required
+            autocomplete="off"/>
+        </form>
+
+      </button>
+
+      {% endif %}
+
+    </div></div>
+      
+    <div id="no-mobile">크롬 브라우저 사이즈를 키워주세요 :)</div>
+  </body>
+  
+  <!-- partial -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/btn-slide.js' %}"></script>
+  
+</html>
+

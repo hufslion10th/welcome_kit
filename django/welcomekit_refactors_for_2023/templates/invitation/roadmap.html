@@ -1,0 +1,87 @@
+{% extends 'invitation/base.html' %}{% block content %}
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/roadmap.css' %}" />
+</head>
+
+<body>
+  <div id="content_div">
+  
+    <div class="rdp-intro" style="margin-top: 2.5rem;">
+      <h1 class="rdp-plain">트랙별 </h1>
+      <h1 class="rdp-highlight"> ROADMAP, </h1>
+      <h1 class="rdp-plain">한눈에 보여드립니다.</h1>
+    </div>
+    
+    <div class="rdp-content"><table class="rdp-table">
+      <tr>
+        <td></td>
+        <td>
+          <button
+            class="rdp-btn"
+            onclick="setInnerFE()">
+            프론트엔드
+          </button>
+        </td>
+        <td></td>
+      </tr>
+        
+      <tr>
+        <td></td>
+        <td class="rdp-btnpad">
+          <button
+            class="rdp-btn"
+            onclick="setInnerBE()">
+            백엔드
+          </button>
+        </td>
+        <td></td>
+      </tr>
+        
+      <tr>
+        <td></td>
+        <td class="rdp-btnpad">
+          <button
+            class="rdp-btn"
+            onclick="setInnerPMD()">
+            기획 & 디자인
+          </button>
+        </td>
+        <td></td>
+      </tr>
+    </table></div>
+    
+    <div class="rdp-back">
+      <h1 class="rdp-backtag">이전으로 돌아가려면 </h1>
+      <a
+        class="rdp-backlight"
+        href = "javascript:window.history.back()">
+        여기
+      </a>
+      <h1 class="rdp-backtag">를 눌러주세요</h1>
+    </div>
+  
+  </div>
+</body>
+
+<script>
+  function setInnerFE() {
+    const element = document.getElementById('content_div');
+    element.innerHTML 
+      = '<div class="rdp-exhead"><img class="rdp-flag" align="left" src="{% static 'img/roadmap/flag.png' %}"><h1 class="rdp-explain">FRONT-END ROAPMAP</h1></div><div class="rdp-introhead"><h1 class="rdp-plain">사용자의 </h1><h1 class="rdp-highlight">눈에 보이는 </h1><h1 class="rdp-plain">웹의 모든 것</h1></div><table class="rdp-imgtable"><th class="rdp-th">기초</th><th class="rdp-th">발전</th><th class="rdp-th">응용</th><tr><td><img class="rdp-tbgit" src="{% static 'img/roadmap/roadmap_FE/github_w.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_FE/js_and_ts.png' %}"></td><td><img class="rdp-imgraw" src="{% static 'img/roadmap/roadmap_FE/react_and_vuejs.png' %}"></td></tr><tr><td><img class="rdp-imgraw" src="{% static 'img/roadmap/roadmap_FE/html_and_css.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_FE/bootstrap.png' %}"></td><td><img class="rdp-imgraw" src="{% static 'img/roadmap/roadmap_FE/jest.png' %}"></td></tr></table><div class="rdp-overimg"><h1 class="rdp-oitext">사용하기 쉬운 웹사이트를 만들어서 사용자의 참여를 이끌어내는 프론트엔드</h1><a class="rdp-oihighlight" href =".">돌아가기</a></div>';
+  } 
+  function setInnerBE() {
+    const element = document.getElementById('content_div');
+    element.innerHTML 
+      = '<div><div class="rdp-exhead"><img class="rdp-flag" align="left" src="{% static 'img/roadmap/flag.png' %}"><h1 class="rdp-explain">BACK-END ROAPMAP</h1></div><div class="rdp-introhead"><h1 class="rdp-highlight">데이터를 </h1><h1 class="rdp-plain">저장하고, </h1><h1 class="rdp-plain">관리하는 모든 과정</h1></div><table class="rdp-imgtable"><th class="rdp-th">기초</th><th class="rdp-th">발전</th><th class="rdp-th">응용</th><tr><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_BE/github_and_html_and_css.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_BE/linux.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_BE/django.png' %}"></td></tr><tr><td><img class="rdp-bimgraw bd-radious" src="{% static 'img/roadmap/roadmap_BE/java_and_python.png' %}"></td><td><img class="rdp-bimgraw" src="{% static 'img/roadmap/roadmap_BE/docker.png' %}"></td><td><img class="rdp-bimgraw" src="{% static 'img/roadmap/roadmap_BE/springboot_and_spring.png' %}"></td></tr></table><div class="rdp-overimg"><h1 class="rdp-oitext ">사용자를 위한 기능들이 매끄럽게 작동될 수 있도록 데이터를 저장하고 관리하는 백엔드</h1><a class="rdp-oihighlight" href =".">돌아가기</a></div>';
+  }
+  function setInnerPMD() {
+    const element = document.getElementById('content_div');
+    element.innerHTML 
+      = '<div class="rdp-exhead"><img class="rdp-flag" align="left" src="{% static 'img/roadmap/flag.png' %}"><h1 class="rdp-explain">PM & DESIGNER ROADPMAP</h1></div><div class="rdp-introhead"><h1 class="rdp-highlight">아이디어 실현</h1><h1 class="rdp-plain">의 꽃</h1></div><table class="rdp-imgtable"><th class="rdp-th">기초</th><th class="rdp-th">발전</th><th class="rdp-th">응용</th><tr><td><img class="rdp-simgraw bd-radious" src="{% static 'img/roadmap/roadmap_PMD/ideation.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_PMD/figma.png' %}"></td><td><img class="rdp-imgraw bd-radious" src="{% static 'img/roadmap/roadmap_PMD/apipxa.png' %}"></td></tr><tr><td class="rdp-td"><img class="rdp-mimgraw" src="{% static 'img/roadmap/roadmap_PMD/github_and_html_and_css.png' %}"></td><td><img class="rdp-mimgraw" src="{% static 'img/roadmap/roadmap_PMD/uiux_and_wireframe.png' %}"></td><td class="rdp-td"><img class="rdp-mimgraw" src="{% static 'img/roadmap/roadmap_PMD/atoz.png' %}"></td></tr></table><div class="rdp-overimg" style="margin-top: -1rem;"><h1 class="rdp-oitext">아이디어를 실제로 구현해내기 위한 모든 과정을 그려내고 아름다움을 더하는 기획자와 디자이너</h1><a class="rdp-oihighlight" href =".">돌아가기</a></div>';
+  } 
+
+</script>
+
+{% endblock %}
