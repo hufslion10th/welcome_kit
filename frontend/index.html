@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>10기 아기사자들을 환영합니다!</title>
+        <link rel="stylesheet" href="./static/css/style.css" />
+        <link
+            href="//db.onlinewebfonts.com/c/5a9f693a1affe1c64c2cf97a146a7986?family=APPLE"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+
+    <body>
+        <img src="./static/img/lion_background.jpg" id="background-img" />
+        <!-- congrats effect -->
+        <div
+            class="js-container container"
+            style="top: 0rem !important; border: 0.0625rem; border-color: black"
+        >
+            <div id="welcome-block">
+                <div id="welcome-block__greet">
+                    <p class="welcome-block__greet-text">
+                        아기사자 <br /><span>OOO님</span>
+                    </p>
+                    <p class="welcome-block__greet-text">
+                        멋쟁이사자처럼에<br />
+                        합류하신 것을<br />
+                        환영합니다.
+                    </p>
+                </div>
+                <button id="start-btn">
+                    Let's on-board
+                    <form action="get" name="login">
+                        <input type="text" class="hide" required />
+                    </form>
+                </button>
+            </div>
+        </div>
+
+        <div id="no-mobile">1440 X 940 이상의 환경에서 실행해주세요 :)</div>
+
+        <!-- partial -->
+        <script src="./static/js/script.js"></script>
+        <script src="./static/js/btn-slide.js"></script>
+        <script
+            src="https://kit.fontawesome.com/1390e41385.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
